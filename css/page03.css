@@ -1,0 +1,32 @@
+/* Estilos para fav-movies.html */
+
+.mbox{
+    display: inline-block;  /*Diseño Responsive*/
+    align-items: center;
+    justify-content: center;
+}
+
+.caja1{
+    display: inline-block;  /*Diseño Responsive*/
+    max-width: 400px;
+    margin: 10px 10px;
+}
+
+figure.video1{
+    background-color: royalblue;
+    border: 2px darkblue solid;
+    margin: 10px;
+}
+
+figure.video1 figcaption{
+    color: white;
+    font-style: italic;
+    font-size: smaller;
+    padding: 3px;
+    text-align: center;
+}
+
+.peli{
+    width: 320px;
+    height: 180px;
+}

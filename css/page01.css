@@ -1,0 +1,62 @@
+/* Estilos para Index.html */
+
+p{
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.mbox{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja{
+    max-width: 400px;
+    margin: 25px 10px;
+    border: 3px solid red;
+    border-radius: 5%;
+}
+
+.caja__imagen{
+    align-items: center;
+    padding: 10px 0;
+}
+
+.caja__imagen img{
+    height: 100px;
+    width: auto;
+}
+
+.caja__desc{
+    padding: 10px;
+}
+
+.caja__imagen--circular{
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    width: 240px;
+    height: 240px;
+    margin-left: 17%;
+    margin-top: 5px;
+
+}
+
+.caja__imagen--circular img{
+    height: 250px;
+    width: 250px;
+}
+
+@media (min-width: 600px){
+    h2{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 900px){
+    h2{
+        font-size: 26px;
+    }
+}

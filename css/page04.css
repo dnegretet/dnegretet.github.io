@@ -1,0 +1,26 @@
+/* Estilos para yt-docfilms.html */
+
+.mbox{
+    align-items: center;
+    justify-content: center;
+}
+
+.dfilm{
+    display: inline-flex; /*Diseño Responsive*/
+    max-width: 400px;
+    margin: 10px 10px;
+}
+
+figure.docu1{
+    background-color: red;
+    border: 2px darkred solid;
+    margin: 10px;
+}
+
+figure.docu1 figcaption{
+    color: white;
+    font-style: italic;
+    font-size: smaller;
+    padding: 3px;
+    text-align: center;
+}

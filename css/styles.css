@@ -1,0 +1,186 @@
+/* ESTILOS PARA TODAS LAS PAGINAS */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); /* Fuente externa */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif, Arial;
+    font-size: 20px;
+    min-height: 100%;
+}
+
+h2{
+    font-family: Arial; /*Fuente Interna*/
+    font-size: 22px;
+    color: midnightblue;
+}
+
+.contenedor-grid > * {
+    border: 3px solid steelblue;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Uso de cuadriculas - CSS Grid */
+.contenedor-grid{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 60px auto 100px 50px;
+    grid-template-areas: "header" "navbar" "main" "sidebar" "footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: darkred;
+    color: white; 
+}
+
+div.cajatitulo{
+    position: relative;
+    width: 370px;
+    height: 100%;
+}
+
+div.titulo{
+    padding-top: 10px;
+    text-align: left;
+    animation: move01 5s infinite; /*Animación*/
+}
+
+@keyframes move01{ 
+    from {left: 0%;}
+    to {left: 8%;}
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: darkslategray;
+}
+ul.menu{
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    height: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px 5px 10px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.menu li a:hover{
+    background-color: red;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: black;
+    align-items: center;
+}
+
+.imgsponsor{
+    content: url(../images/auspiciador2.gif);
+    max-height: 100px;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+.main{
+    grid-area: main;
+    background-color: lightgrey;
+}
+
+.footer{
+    grid-area: footer;
+    color: white;
+    background-color: dimgrey;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Diseño Responsive */
+@media (min-width: 600px){
+    .contenedor-grid{
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 50px;
+        grid-template-areas: "header header" "navbar navbar" "sidebar main" "footer footer";
+    }
+    @keyframes move01{
+        from {left: 0%;}
+        to {left: 55%;}
+    }
+
+    .menu li{
+        font-size: 20px;
+    }
+
+    .menu li a{
+        padding: 0 20px 5px 15px;
+    }
+
+    .imgsponsor{
+        content: url(../images/auspiciador1.gif);
+        max-height: 100%;
+        max-width: 175px;
+        padding-top: 50%;
+    }
+}
+/* Diseño Responsive */
+@media (min-width: 900px){
+    h2{
+        font-size: 30px;
+    }
+    .contenedor-grid{
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: 100px auto 50px;
+        grid-template-areas: "header header header" "navbar main sidebar" "footer footer footer";
+    }
+
+    @keyframes move01{
+        from {left: 0%;}
+        to {left: 140%;}
+    }
+
+    ul.menu{
+        margin-top: 50px;
+        max-height: 300px;
+    }
+
+    .menu li{
+        font-size: 23px;
+    }
+
+    .menu li a{
+        padding-bottom: 20px;
+        padding-top: 10px
+    }
+    .imgsponsor{
+        content: url(../images/auspiciador1.gif);
+        max-height: 100%;
+        max-width: 175px;
+        padding-top: 70%;
+    }
+}
