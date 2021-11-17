@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- META-TAGS generadas por https://metatags.miarroba.com -->
+      <meta name="author" content="Daniel Negrete">
+      <meta name="reply-to" content="daniel.negrete.tenicela@gmail.com">
+      <link rev="made" href="mailto:daniel.negrete.tenicela@gmail.com">
+      <meta name="description" content="En esta página encontrará ejemplos en el uso de las herramientas que tiene Bootstrap 5 para la creación de formularios en paginas web.">
+      <meta name="keywords" content="website, ejemplo, ejemplos, Bootstrap, Bootstrap 5, grid, cuadricula, form, formulario, formularios, diseño, web, responsive, responsable, CSS, HTML">
+      <meta name="Resource-type" content="howto">
+      <meta name="DateCreated" content="Wed, 17 November 2021 00:00:00 GMT-5">
+      <meta name="Revisit-after" content="10 days">
+      <meta name="robots" content="all">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Mi Primer Website Bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="#">Formulario</a>
+                  <a class="nav-link" href="page02.html">Tabla</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<!-- Titulo principal y descripcion de la pagina -->
+<section>
+    <div class="container-fluid p-2 my-3 bg-primary text-white text-center">
+        <h2>Formulario</h2>
+        <p>En esta página mostraremos un formulario con estilos Bootstrap y sus elementos para recojo de datos de usuarios como botones, checkbox, list, etc.</p>
+    </div>
+</section>
+
+<main>
+    <!-- formulario Bootstrap -->
+    <div class="container p-2 my3 bg-light">
+        
+        <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Información del Alumno</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Nombres</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Nombres completos" value="" required>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Apellidos</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Apellido Paterno y Materno" value="" required>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="username" class="form-label">Código de usuario</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Usuario" required>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña" value="" required>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="dni" class="form-label">Documento de Identidad</label>
+                    <input type="text" class="form-control" id="dni" placeholder="Nº de documento" value="" required>
+                  </div>
+                  
+                  <div class="col-sm-6">
+                    <label for="fecnac" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="fecnac" placeholder="" value="" required>
+                  </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label">Correo <span class="text-muted">(Opcional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com">
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Direccion</label>
+                  <input type="text" class="form-control" id="address" placeholder="Av / Cl / Jr #1234" required>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address2" class="form-label">Direccion 2 <span class="text-muted">(Opcional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Dpto / Int">
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="country" class="form-label">Pais</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Seleccionar...</option>
+                    <option>Peru</option>
+                  </select>
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="state" class="form-label">Region/Estado</label>
+                  <select class="form-select" id="state" required>
+                    <option value="">Seleccionar...</option>
+                    <option>Lima</option>
+                    <option>Arequipa</option>
+                    <option>La Libertad</option>
+                    <option>Loreto</option>
+                    <option>Madre de Dios</option>
+                    <option>Cusco</option>
+                    <option>Huanuco</option>
+                    <option>Tacna</option>
+                    <option>Lambayeque</option>
+                    <option>Tumbes</option>
+                    <option>Piura</option>
+                  </select>
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="ciudad" class="form-label">Ciudad</label>
+                  <select class="form-select" id="ciudad" required>
+                    <option value="">Seleccionar...</option>
+                    <option>Lima</option>
+                    <option>Arequipa</option>
+                    <option>Trujillo</option>
+                    <option>Iquitos</option>
+                    <option>Puerto Maldonado</option>
+                    <option>Cusco</option>
+                    <option>Huanuco</option>
+                    <option>Tacna</option>
+                    <option>Chiclayo</option>
+                    <option>Tumbes</option>
+                    <option>Piura</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="col-12 my-3">
+                <label for="formFile" class="form-label">Adjuntar Documento de Identidad escaneado</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+
+              <hr class="my-4">
+              
+              <h4 class="mb-3">Cursos a llevar</h4>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="desarrollo-web">
+                <label class="form-check-label" for="desarrollo-web">Desarrollo Web</label>
+              </div>
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="comercio-electronico">
+                <label class="form-check-label" for="comercio-electronico">Comercio Electrónico</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="app-moviles">
+                <label class="form-check-label" for="app-moviles">Aplicaciones Móviles</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="python">
+                <label class="form-check-label" for="python">Programación en Python</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="C++">
+                <label class="form-check-label" for="C++">Programación en C++</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="java">
+                <label class="form-check-label" for="java">Programación en Java</label>
+              </div>
+    
+              <hr class="my-4">
+    
+              <h4 class="mb-3">Método de Pago</h4>
+    
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Tarjeta de Crédito</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Tarjeta de Débito</label>
+                </div>
+                <div class="form-check">
+                  <input id="tbanc" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="tbanc">Transferecia Bancaria</label>
+                </div>
+              </div>
+    
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Nombre en tarjeta</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <small class="text-muted">Nombre completo como se muestra en tarjeta</small>
+                </div>
+    
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Número de tarjeta</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="cc-expiration" class="form-label">Fecha venc.</label>
+                  <input type="month" class="form-control" id="cc-expiration" placeholder="" required>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="number" class="form-control" id="cc-cvv" placeholder="" required>
+                </div>
+              </div>
+    
+            <hr class="my-4">
+              
+            <button class="col-sm-5 btn btn-primary btn-lg" type="submit">Enviar Informacion</button>
+                          
+            <button class="col-sm-5 btn btn-secondary btn-lg my-3" type="reset">Limpiar Formulario</button>
+
+            <hr class="my-4">
+            </form>
+          </div>
+    </div>
+</main>
+
+<!-- Pie de Pagina -->
+
+<div class="container-fluid bg-dark text-white">
+    <footer class="py-3">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="page01.html" class="nav-link px-2 text-muted">Formulario</a></li>
+        <li class="nav-item"><a href="page02.html" class="nav-link px-2 text-muted">Tabla</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; Daniel Negrete Tenicela - Cod. Alumno SV25843471</p>
+    </footer>
+  </div>
+
+</body>
+
+
+</html>

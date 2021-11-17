@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <!-- Meta-tags agregados por mi -->
+    <meta name="description" content= "En esta página encontrará ejemplos en el uso herramientas que tiene Bootstrap 5 para la creacion de tablas en paginas web." />
+    <meta name="robots" content= "index, follow">
+    <meta name="author" content="Daniel Negrete"/>
+    <meta name="copyright" content="Daniel Negrete" />
+    <meta name="keywords" content="website, ejemplo, ejemplos, Bootstrap, Bootstrap 5, tabla, tablas, diseño, web, responsive, responsable, CSS, HTML"/>
+    <meta http-equiv="cache-control" content="public">
+    <meta name="Resource-type" content="howto">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Mi Primer Website Bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                  <a class="nav-link" href="page01.html">Formulario</a>
+                  <a class="nav-link active" aria-current="page" href="#">Tabla</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<!-- Titulo principal y descripcion de la pagina -->
+<section>
+    <div class="container-fluid p-2 my-3 bg-secondary text-white text-center">
+        <h2>Tabla</h2>
+        <p>En esta página mostraremos algunas tablas de datos con estilos de Bootstrap.</p>
+    </div>
+</section>
+
+<main>
+    <!-- Tabla 1 -->
+    <div class="container text-left p-2 my-1"><h3>Runas del Videojuego Diablo 2</h3></div>
+
+    <div class=container>
+        <div class="table-responsive">
+            <table class="table table-dark table-sm table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Nivel</th>
+                        <th scope="col">Armas</th>
+                        <th scope="col">Armadura/yelmo/escudo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><img src="images/runeHel.jfif" alt="hel"></td>
+                    <td>Hel</td>
+                    <td> - </td>
+                    <td>Requisitos -20%</td>
+                    <td>Requisitos -15%</td>
+                </tr>
+                <tr>
+                    <td><img src="images/runeEld.jfif" alt="eld"></td>
+                    <td>Eld</td>
+                    <td>11</td>
+                    <td>+75% Daño a los Muertos Vivientes, <br>
+                        +50 Puntuacion de Ataque Muertos Vivientes</td>
+                    <td>15% Drenaje de Resistencia mas lento, <br>
+                        7% Posibilidad de Bloqueo Mayor (escudo)</td>
+                </tr>
+                <tr>
+                    <td><img src="images/runeNef.jfif" alt="nef"></td>
+                    <td>Nef</td>
+                    <td>13</td>
+                    <td>El objetivo retocede</td>
+                    <td>+30 Defensa Contra Misiles</td>
+                </tr>
+                <tr>
+                    <td><img src="images/runeSol.jfif" alt="sol"></td>
+                    <td>Sol</td>
+                    <td>27</td>
+                    <td>+9 al Daño Mínimo</td>
+                    <td>Daño Reducido en 7</td>
+                </tr>
+                <tr>
+                    <td><img src="images/runeLo.jfif" alt="lo"></td>
+                    <td>Lo</td>
+                    <td>59</td>
+                    <td>20% Posibilidad de Azote Mortal</td>
+                    <td>5% a la Resistencia Maxima a los Rayos</td>
+                </tr>
+                </tbody>
+                <tfoot style="text-align: left;">
+                    <tr>
+                    <td colspan="5">Nota: estas son solo algunas de las 32 runas que existen en D2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <hr class="my-4">
+<!-- Tabla 2 -->
+
+    <div class="container text-left p-2 my-1"><h3>Datos de Alumnos</h3></div>
+
+    <div class="container col-md-6">
+        <div class="table-responsive-md">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">Nº</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Apellido</th>
+                      <th scope="col">Codigo Alumno</th>
+                      <th scope="col">Estatus</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Juan</td>
+                      <td>Perez</td>
+                      <td>SV12345678</td>
+                      <td>Aprobado</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Pedro</td>
+                      <td>Castillo</td>
+                      <td>SV85245673</td>
+                      <td>Reprobado</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Julio</td>
+                      <td>Velarde</td>
+                      <td>SV07942316</td>
+                      <td>Aprobado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Pedro</td>
+                        <td>Francke</td>
+                        <td>SV15978462</td>
+                        <td>Reprobado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Anibal</td>
+                        <td>Torres</td>
+                        <td>SV00000001</td>
+                        <td>Reprobado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Dina</td>
+                        <td>Boluarte</td>
+                        <td>SV58476243</td>
+                        <td>Reprobado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Vladimir</td>
+                        <td>Cerron</td>
+                        <td>SV66666666</td>
+                        <td>Reprobado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Roberto</td>
+                        <td>Chiabra</td>
+                        <td>SV35687522</td>
+                        <td>Aprobado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Gianluca</td>
+                        <td>Lapadula</td>
+                        <td>SV58333467</td>
+                        <td>Aprobado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td colspan="2">El zorrito Run-Run</td>
+                        <td>SV55688411</td>
+                        <td>Aprobado</td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+    </div>
+    <hr class="my-4">
+<!-- tabla 3 -->
+    <div class="container text-left p-2 my-1"><h3>Tabla Horizontal</h3></div>
+
+    <div class="container text-center">
+        <div class="table-responsive-sm">
+            <table class="table table-primary table-striped table-bordered border-primary">
+                <tr>
+                    <th>Nº</th>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>Nombre</th>
+                    <td>Juan</td>
+                    <td>Pedro</td>
+                    <td>Julio</td>
+                    <td>Pedro</td>
+                    <td>Anibal</td>
+                    <td>Dina</td>
+                    <td>Vladimir</td>
+                    <td>Roberto</td>
+                    <td>Gianluca</td>
+                    <td rowspan="2">El zorrito Run Run</td>
+                </tr>
+                <tr>
+                    <th>Apellido</th>
+                    <td>Perez</td>
+                    <td>Castillo</td>
+                    <td>Velarde</td>
+                    <td>Francke</td>
+                    <td>Torres</td>
+                    <td>Boluarte</td>
+                    <td>Cerron</td>
+                    <td>Chiabra</td>
+                    <td>Lapadula</td>
+                </tr>
+                <tr>
+                    <th>Codigo Alumno</th>
+                    <td>SV12345678</td>
+                    <td>SV85245673</td>
+                    <td>SV07942316</td>
+                    <td>SV15978462</td>
+                    <td>SV00000001</td>
+                    <td>SV58476243</td>
+                    <td>SV66666666</td>
+                    <td>SV35687522</td>
+                    <td>SV58333467</td>
+                    <td>SV55688411</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>Aprobado</td>
+                    <td>Reprobado</td>
+                    <td>Aprobado</td>
+                    <td>Reprobado</td>
+                    <td>Reprobado</td>
+                    <td>Reprobado</td>
+                    <td>Reprobado</td>
+                    <td>Aprobado</td>
+                    <td>Aprobado</td>
+                    <td>Aprobado</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr class="my-4">
+</main>
+
+<!-- Pie de Pagina -->
+
+<div class="container-fluid bg-dark text-white">
+    <footer class="py-3">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="page01.html" class="nav-link px-2 text-muted">Formulario</a></li>
+        <li class="nav-item"><a href="page02.html" class="nav-link px-2 text-muted">Tabla</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; Daniel Negrete Tenicela - Cod. Alumno SV25843471</p>
+    </footer>
+  </div>
+
+</body>
+
+
+</html>

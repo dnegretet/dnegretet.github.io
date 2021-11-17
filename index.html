@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <!-- made by www.metatags.org -->   
+    <meta name="description" content= "En esta página encontrará ejemplos en el uso de las múltiples características y ventajas que tiene Bootstrap 5 como herramienta para el diseño web." />
+    <meta name="robots" content= "index, follow">
+    <meta name="author" content="Daniel Negrete"/>
+    <meta name="copyright" content="Daniel Negrete" />
+    <meta name="keywords" content="website, ejemplo, ejemplos, Bootstrap, Bootstrap 5, carrusel, carousel, contenedor, contenedores, container, imagenes, grid, cuadricula, form, formulario, formularios, tabla, tablas, diseño, web, responsive, responsable, CSS, HTML"/>
+    <meta http-equiv="cache-control" content="public">
+</head>
+
+<body>
+<!-- Barra de Navegacion -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Mi Primer Website Bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link" href="page01.html">Formulario</a>
+                  <a class="nav-link" href="page02.html">Tabla</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<!-- Titulo principal y descripcion de la pagina -->
+    <section>
+        <div class="container-fluid p-2 my-3 bg-dark text-white text-center">
+            <h2>Página Inicial</h2>
+            <p>En esta página mostraremos el uso de contenedores, cuadrículas e imágenes con Bootstrap.</p>
+        </div>
+    </section>
+
+<!-- Contenido Principal -->
+    <main>
+        <!-- Carrusel de imagenes -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="background-color: grey;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/machupicchu.jpg" class="d-block mx-auto" alt="machupicchu">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Macchu-Picchu</h5>
+                  <p>Cusco - Perú</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/Chichen_Itza.jpg" class="d-block mx-auto" alt="chichen_itza">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Chichen-Itza</h5>
+                  <p>Mexico</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/coliseo.jpg" class="d-block mx-auto" alt="coliseo">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>El Coliseo Romano</h5>
+                  <p>Italia</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/CR.jpg" class="d-block mx-auto" alt="cr">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>El Cristo Redentor</h5>
+                  <p>Brasil</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/muralla.jpg" class="d-block mx-auto" alt="muralla">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>La Gran Muralla</h5>
+                  <p>China</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/petra.jpg" class="d-block mx-auto" alt="petra">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>La Ciudad de Petra</h5>
+                  <p>Jordania</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/taj_mahal.jpg" class="d-block mx-auto" alt="taj-mahal">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>El Taj Mahal</h5>
+                  <p>India</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- cuadriculas con tarjetas -->
+
+        <div class="container text-center p-2 my-1 bg-secondary text-white"><h2>Las 7 Maravillas del Mundo moderno</h2></div>
+
+        <div class="container p-2 my-3">
+            <div class="row">
+              <div class="col">
+                <div class="card my-3" style="width: 18rem;">
+                    <img src="images/machupicchu.jpg" class="card-img-top" alt="machupicchu">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">Machu-Picchu - Perú</h5>
+                      <p class="card-text" style="text-align: justify;">Descubierta en el año 1902 por Agustín Lizárraga y dada a conocer al mundo en 1911 por Hiram Bingham, la ciudad “perdida” de los Incas fue construida a mediados del siglo XV d. C por órdenes del Inca Pachacútec.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card my-3" style="width: 18rem;">
+                    <img src="images/Chichen_Itza.jpg" class="card-img-top" alt="chichen-itza">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">Chichen-Itza - Mexico</h5>
+                      <p class="card-text" style="text-align: justify;">Inaugurada en el año 525 d.C., sirvió como templo para el dios Kukulkán. Es una pirámide con una serie de terrazas cuadradas con escaleras que suben desde cada uno de los cuatro lados la misma hasta la parte superior.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card my-3" style="width: 18rem;">
+                    <img src="images/coliseo.jpg" class="card-img-top" alt="coliseo">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">El Coliseo Romano - Italia</h5>
+                      <p class="card-text" style="text-align: justify;">Su nombre original fue Anfiteatro Flavio y aquí se organizaban las luchas de los gladiadores, entre otros espectáculos. Funcionó durante más de 500 años y fue construido para soportar a más de 50 mil espectadores.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="container p-2 my-3">
+            <div class="row">
+                <div class="col">
+                  <div class="card my-3" style="width: 18rem;">
+                      <img src="images/CR.jpg" class="card-img-top" alt="cr">
+                      <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">El Cristo Redentor - Brasil</h5>
+                        <p class="card-text" style="text-align: justify;">Este monumento de 30 metros de altura en lo más alto del cerro Corcovado fue inaugurado en 1931 y es el fruto del trabajo en conjunto del escultor polaco-francés Paul Landowski y del ingeniero brasileño Heitor da Silva Costa.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card my-3" style="width: 18rem;">
+                      <img src="images/muralla.jpg" class="card-img-top" alt="muralla">
+                      <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">La Gran Muralla - China</h5>
+                        <p class="card-text" style="text-align: justify;">Fue construida entre los siglos V A.C y XVI D.C. a base de piedra, ladrillo, madera y tierra apisonada con la finalidad de proteger el pais contra las invasiones de los mongoles. Originalmente llegó a medir más de 21 mil kilómetros.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card my-3" style="width: 18rem;">
+                      <img src="images/petra.jpg" class="card-img-top" alt="petra">
+                      <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Petra - Jordania</h5>
+                        <p class="card-text" style="text-align: justify;">Fue construida en el año 312 A.C como capital de los nabateos árabes, y era lugar de paso de caravanas que transportaban especias, incienso y productos de lujo entre Arabia, Siria, Egipto y el Sur del Mediterráneo</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="container p-2 my-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/taj_mahal.jpg" class="card-img-top" alt="taj-mahal">
+                        <div class="card-body">
+                          <h5 class="card-title" style="text-align: center;">El Taj-Mahal - India</h5>
+                          <p class="card-text" style="text-align: justify;">Fue construido a mediados del siglo XVII por el emperador Shah Jahan como mausoleo para enterrar a su difunta esposa. Mide 42 acres que incluyen una mezquita y una casa de huéspedes, además de los jardines.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+<!-- Pie de página -->
+
+<div class="container-fluid bg-dark text-white">
+  <footer class="py-3">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+      <li class="nav-item"><a href="page01.html" class="nav-link px-2 text-muted">Formulario</a></li>
+      <li class="nav-item"><a href="page02.html" class="nav-link px-2 text-muted">Tabla</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; Daniel Negrete Tenicela - Cod. Alumno SV25843471</p>
+  </footer>
+</div>
+
+</body>
+
+
+</html>
